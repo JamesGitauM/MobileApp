@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="8dp"
+    android:id="@+id/client_Cardview">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/text_viewClientId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        <TextView
+            android:id="@+id/clientname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Client Name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:maxLines="1"
+            android:layout_toLeftOf="@id/text_viewClientId"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="end"/>
+            <TextView
+                android:id="@+id/localaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/clientname"
+                android:text="Local Address"
+
+                />
+        <TextView
+            android:id="@+id/emailadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:layout_alignRight="@id/localaddress"
+            android:layout_below="@id/text_viewClientId"
+            android:layout_alignParentRight="true"
+            />
+        <TextView
+            android:id="@+id/clcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Client Code"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:layout_alignRight="@id/localaddress"
+            android:layout_below="@id/localaddress"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
